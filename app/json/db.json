@@ -69,126 +69,24 @@
       "telephone": 380501112240,
       "address": "Borshagovska st, 130",
       "id": "aec570b3-6622-4920-99eb-f184e8aa633f"
-    }
-  ],
-  "958a3b26-34c7-46e3-8042-fe2fdfb68fe0": [
+    },
     {
-      "name": "Customer 1",
-      "email": "customer1@gmail.com",
-      "telephone": 380501112233,
-      "address": "Borshagovska st, 123",
-      "street": "Borshagovska",
-      "city": "Kyiv",
-      "zip": 3055,
-      "id": "958a3b26-34c7-46e3-8042-fe2fdfb68fe0"
-    }
-  ],
-  "fa9690cc-b2f3-4cb1-ac69-b58e846cfb76": [
+      "id": "98b7f087-87a6-4fab-8a49-0cf2f08e13b6"
+    },
     {
-      "name": "Customer 2",
-      "email": "customer2@gmail.com",
-      "telephone": 380501112233,
-      "address": "Borshagovska st, 123",
-      "street": "Borshagovska",
-      "city": "Kyiv",
-      "zip": 3055,
-      "id": "fa9690cc-b2f3-4cb1-ac69-b58e846cfb76"
-    }
-  ],
-  "78fde5d9-6eb3-4133-9907-12c2795e4d95": [
+      "name": "myname",
+      "email": "eqweqw@qweqwe",
+      "id": "be6d1665-5b2b-4cef-baf6-3a268d22f6c8"
+    },
     {
-      "name": "Customer 3",
-      "email": "customer3@gmail.com",
-      "telephone": 380501112234,
-      "address": "Borshagovska st, 124",
-      "street": "Borshagovska",
-      "city": "Kyiv",
-      "zip": 3056,
-      "id": "78fde5d9-6eb3-4133-9907-12c2795e4d95"
-    }
-  ],
-  "a2d34923-bc22-4ac7-be76-e012468d717e": [
+      "name": "Customer 11",
+      "email": "cust11@ccc.ccc",
+      "id": "bbc61d1b-31c6-42fa-a59d-1b9e6b16698a"
+    },
     {
-      "name": "Customer 4",
-      "email": "customer4@gmail.com",
-      "telephone": 380501112234,
-      "address": "Borshagovska st, 124",
-      "street": "Borshagovska",
-      "city": "Kyiv",
-      "zip": 3055,
-      "id": "a2d34923-bc22-4ac7-be76-e012468d717e"
-    }
-  ],
-  "8d941445-868d-45db-82bf-f7716716e2ec": [
-    {
-      "name": "Customer 5",
-      "email": "customer5@gmail.com",
-      "telephone": 380501112235,
-      "address": "Borshagovska st, 125",
-      "street": "Borshagovska",
-      "city": "Kyiv",
-      "zip": 3055,
-      "id": "8d941445-868d-45db-82bf-f7716716e2ec"
-    }
-  ],
-  "6b8c688f-86d4-4470-abda-f0ef85234a99": [
-    {
-      "name": "Customer 6",
-      "email": "customer6@gmail.com",
-      "telephone": 380501112236,
-      "address": "Borshagovska st, 126",
-      "street": "Borshagovska",
-      "city": "Kyiv",
-      "zip": 3056,
-      "id": "6b8c688f-86d4-4470-abda-f0ef85234a99"
-    }
-  ],
-  "9fdcf0dd-4001-4dd2-b4ff-6e0c88216c72": [
-    {
-      "name": "Customer 7",
-      "email": "customer7@gmail.com",
-      "telephone": 380501112237,
-      "address": "Borshagovska st, 127",
-      "street": "Borshagovska",
-      "city": "Kyiv",
-      "zip": 3055,
-      "id": "9fdcf0dd-4001-4dd2-b4ff-6e0c88216c72"
-    }
-  ],
-  "06d16352-602e-4acc-897b-22f11abbe004": [
-    {
-      "name": "Customer 8",
-      "email": "customer8@gmail.com",
-      "telephone": 380501112238,
-      "address": "Borshagovska st, 128",
-      "street": "Borshagovska",
-      "city": "Kyiv",
-      "zip": 3058,
-      "id": "06d16352-602e-4acc-897b-22f11abbe004"
-    }
-  ],
-  "35a31c3c-482a-488b-9933-bae19b518044": [
-    {
-      "name": "Customer 9",
-      "email": "customer9@gmail.com",
-      "telephone": 380501112239,
-      "address": "Borshagovska st, 129",
-      "street": "Borshagovska",
-      "city": "Kyiv",
-      "zip": 3055,
-      "id": "35a31c3c-482a-488b-9933-bae19b518044"
-    }
-  ],
-  "aec570b3-6622-4920-99eb-f184e8aa633f": [
-    {
-      "name": "Customer 10",
-      "email": "customer10@gmail.com",
-      "telephone": 380501112240,
-      "address": "Borshagovska st, 130",
-      "street": "Borshagovska",
-      "city": "Kyiv",
-      "zip": 3060,
-      "id": "aec570b3-6622-4920-99eb-f184e8aa633f"
+      "name": "Customer 12",
+      "email": "cust12@ccc.ccc",
+      "id": "97ea96c4-5c21-4017-91f3-1dd5e538f646"
     }
   ]
 }

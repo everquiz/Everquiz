@@ -5,8 +5,24 @@ function httpGet(theUrl) {
   return xmlHttp.responseText;
 }
 
+function httpPost(theUrl, data) {
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open( "POST", theUrl, false );
+  xmlHttp.setRequestHeader('Content-Type', 'application/json');
+  xmlHttp.onreadystatechange = function () {
+      if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+          alert(xmlHttp.responseText);
+      }
+  }
+  xmlHttp.send( JSON.stringify( data ) );
+}
+
 function getUser(id) {
   return httpGet('http://localhost:3000/users/' + id)
+}
+
+function postUser(data) {
+  return httpPost('http://localhost:3000/users', data)
 }
 
 var users = httpGet('http://localhost:3000/users'),
@@ -24,5 +40,26 @@ for (var i = users.length - 1; i >= 0; i--) {
   })(users[i])
 };
 userDiv.appendChild(ul);
+
+function newUser(e) {
+  if (e.preventDefault) e.preventDefault();
+    if (this.name.value && this.email.value) {
+      var newUser = {};
+      newUser.name = this.name.value;
+      newUser.email = this.email.value;
+      console.log(newUser);
+      postUser(newUser);
+    };
+  return false;
+}
+
+var newUserForm = document.getElementById('newUser');
+if (newUserForm.attachEvent) {
+    newUserForm.attachEvent("submit", newUser);
+} else {
+    newUserForm.addEventListener("submit", newUser);
+}
+// document.getElementById("newUser").submit();
+
 
 
