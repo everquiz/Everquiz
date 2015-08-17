@@ -1,0 +1,19 @@
+{
+  "name": "everquiz",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Quizzes with notes",
+  "repository": "https://github.com/everquiz/Everquiz",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.6.1",
+    "shelljs": "^0.2.6"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1",
+
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update"
+  }
+}
