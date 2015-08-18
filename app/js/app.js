@@ -140,7 +140,12 @@ for (var i = users.length - 1; i >= 0; i--) {
         id = users[i].id,
         delBtn = document.createElement('input'),
         editBtn;
-    li.textContent = users[i].name;
+    li.textContent = 
+    'Name: ' + users[i].name + 
+    ' email: ' + users[i].email + 
+    ' notes: ' + users[i].notes.map(function(note){
+        return note.title;
+      }).join(', ');
     delBtn.type = 'button';
     editBtn = delBtn.cloneNode(true);
     delBtn.value = 'Del';
