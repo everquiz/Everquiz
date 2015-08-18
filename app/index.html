@@ -1,39 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>EverQuiz</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/app.css">
+	<title>Blogspot</title>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
 </head>
-<body>
-  <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-  <div class="main-container">
-    <h1>EverQuiz</h1>
-    <h2>List of users</h2>
-    <div id="users"></div>
-    <h2>New user</h2>
-    <form id="newUser">
-      <input type="text" name="name">
-      <input type="email" name="email">
-      <button type="submit">add user</button>
-    </form>
-    <h2>Edit user</h2>
-    <form id="editUser">
-      <input type="text" name="name">
-      <input type="email" name="email">
-      <input type="hidden" name="id">
-      <button type="submit">edit user</button>
-    </form>
-  </div>
+<body page="intro">
+    <nav>
+      <h1>Main page</h1>
+      <ul>
+        <li class="active"><a href="#intro">Intro page</a></li>
+        <li><a href="#quiz-menu">Quiz menu</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+  </nav>
     
-  <section id="intro" class="" src="pages/intro.htm"></section>
-  <section id="quiz-menu" class="" src="pages/quiz-menu.htm"></section>
-  <section id="about" class="" src="pages/about.htm"></section>
+    <section id="intro" class="active" src="pages/intro.htm"></section>
+    <section id="quiz-menu" class="" src="pages/quiz-menu.htm"></section>
+    <section id="about" class="" src="pages/about.htm"></section>
     
-  <script src="js/spa-app.js"></script>
-  <script src="js/app.js"></script>
+    <script src="js/spa-app.js"></script>
 </body>
 </html>
