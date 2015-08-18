@@ -1,27 +1,6 @@
 {
   "users": [
     {
-      "name": "Customer 1",
-      "email": "customer1@gmail.com",
-      "telephone": 380501112233,
-      "address": "Borshagovska st, 123",
-      "id": "958a3b26-34c7-46e3-8042-fe2fdfb68fe0"
-    },
-    {
-      "name": "Customer 2",
-      "email": "customer2@gmail.com",
-      "telephone": 380501112233,
-      "address": "Borshagovska st, 123",
-      "id": "fa9690cc-b2f3-4cb1-ac69-b58e846cfb76"
-    },
-    {
-      "name": "Customer 3",
-      "email": "customer3@gmail.com",
-      "telephone": 380501112234,
-      "address": "Borshagovska st, 124",
-      "id": "78fde5d9-6eb3-4133-9907-12c2795e4d95"
-    },
-    {
       "name": "Customer 4",
       "email": "customer4@gmail.com",
       "telephone": 380501112234,
@@ -77,6 +56,16 @@
       "name": "Customer 13",
       "email": "Cdsfsdf@sadasd",
       "id": "72eb6df1-7ffd-45da-b365-46e750919e0b"
+    },
+    {
+      "name": "Customer 15",
+      "email": "cascsa@ddasd",
+      "id": "e36e8b4a-ddaa-4705-b2a3-ce2eca4b83f1"
+    },
+    {
+      "name": "myname2",
+      "email": "asd@dadasd2",
+      "id": "b2970f98-4ae0-4b3c-8618-2c20e194dd69"
     }
   ]
 }
