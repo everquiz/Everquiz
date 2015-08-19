@@ -12,20 +12,55 @@
   <![endif]-->
   <div class="main-container">
     <h1>EverQuiz</h1>
+    <hr>
     <h2>List of users</h2>
     <div id="users"></div>
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <td>id</td>
+          <td>name</td>
+          <td>email</td>
+          <td>notes</td>
+          <td>actions</td>
+        </tr>
+      </thead>
+    </table>
+    <hr>
+    <table id="userNotes">
+      <thead>
+        <tr>
+          <td>id</td>
+          <td>title</td>
+          <td>text</td>
+          <td>tags</td>
+          <td>dates</td>
+        </tr>
+      </thead>
+    </table>
+    <hr>
     <h2>New user</h2>
     <form id="newUser">
-      <input type="text" name="name">
-      <input type="email" name="email">
+      Name: <input type="text" name="name"><br/>
+      Email: <input type="email" name="email"><br/>
       <button type="submit">add user</button>
     </form>
+    <hr>
     <h2>Edit user</h2>
     <form id="editUser">
-      <input type="text" name="name">
-      <input type="email" name="email">
+      Name: <input type="text" name="name"><br/>
+      Email: <input type="email" name="email"><br/>
       <input type="hidden" name="id">
       <button type="submit">edit user</button>
+    </form>
+    <hr>
+    <h2>Add notes to user</h2>
+    <form id="newNote">
+      Title: <input type="text" name="title"><br/>
+      Text: <textarea name="text"></textarea><br/>
+      Tags: <input type="text" name="tags"><br/>
+      <input type="hidden" name="id">
+      <button type="submit">Add note</button>
     </form>
   </div>
     

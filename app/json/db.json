@@ -11,19 +11,15 @@
           "id": 1,
           "title": "My first note",
           "text": "This is text of my note!!!",
-          "tags": [
-            "Java",
-            "Javascript",
-            "NodeJS"
-          ]
+          "date": 1439932482397,
+          "tags": "Java, Javascript, NodeJS"
         },
         {
           "id": 2,
           "title": "My second note",
           "text": "This is text of my second note!!!",
-          "tags": [
-            "Pizza"
-          ]
+          "date": 1439932482397,
+          "tags": "Pizza"
         }
       ],
       "history": [
@@ -35,7 +31,8 @@
       ],
       "statistic": {
         "1": [
-          "18/20", "16/20"
+          "18/20",
+          "16/20"
         ]
       }
     },
@@ -50,19 +47,15 @@
           "id": 1,
           "title": "My first note",
           "text": "This is text of my note!!!",
-          "tags": [
-            "Java",
-            "Javascript",
-            "NodeJS"
-          ]
+          "date": 1439932482397,
+          "tags": "Java, Javascript, NodeJS"
         },
         {
           "id": 2,
           "title": "My second note",
           "text": "This is text of my second note!!!",
-          "tags": [
-            "Pizza"
-          ]
+          "date": 1439932482397,
+          "tags": "Pizza"
         }
       ],
       "history": [
@@ -74,7 +67,8 @@
       ],
       "statistic": {
         "2": [
-          "18/20", "16/20"
+          "18/20",
+          "16/20"
         ]
       }
     }

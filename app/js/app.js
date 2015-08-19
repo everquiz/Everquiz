@@ -122,6 +122,28 @@ function editUser(e) {
 }
 
 /**
+ * Form handler for new Edit form
+ */
+
+function newNote(e) {
+  if (e.preventDefault) e.preventDefault();
+    if (this.title.value && this.text.value) {
+      var newNote = {};
+      newNote.title = this.title.value;
+      newNote.text = this.text.value;
+      console.log(newNote);
+      var user = JSON.parse(rest.get('users', 'a2d34923-bc22-4ac7-be76-e012468d717e'));
+      user.notes.push(newNote);
+      rest.put('users', user);
+      // rest.post('users', newUser);//postUser(newUser);
+    };
+    this.title.value = '';
+    this.text.value = '';
+  // location.reload();
+  return false;
+}
+
+/**
  * Some logic for testing
  */
 
@@ -132,29 +154,71 @@ Load all users
 var users = rest.get('users'),//getUsers(),
     userDiv = document.getElementById('users'),
     ul = document.createElement('ul');
+    table = document.getElementById('usersTable'),
+    userNotesTable = document.getElementById('userNotes');
 users = JSON.parse(users);
 
 for (var i = users.length - 1; i >= 0; i--) {
   (function() {
-    var li = document.createElement('li'),
-        id = users[i].id,
+    var id = users[i].id,
+        tr = table.insertRow(1),
+        cell1 = tr.insertCell(0),
+        cell2 = tr.insertCell(1),
+        cell3 = tr.insertCell(2),
+        cell4 = tr.insertCell(3),
+        cell5 = tr.insertCell(4),
         delBtn = document.createElement('input'),
-        editBtn;
-    li.textContent = 
-    'Name: ' + users[i].name + 
-    ' email: ' + users[i].email + 
-    ' notes: ' + users[i].notes.map(function(note){
-        return note.title;
-      }).join(', ');
+        editBtn,
+        showNotes,
+        trNotes = userNotesTable.insertRow(1),
+        cellNote1 = trNotes.insertCell(0);
+
+    // Buttons
     delBtn.type = 'button';
     editBtn = delBtn.cloneNode(true);
+    showNotes = delBtn.cloneNode(true);
     delBtn.value = 'Del';
     editBtn.value = 'Edit';
+    showNotes.value = 'Show notes';
+
+    // Events for buttons
     delBtn.addEventListener('click', function() {rest.del('users', id); location.reload();});
     editBtn.addEventListener('click', function() {loadUserToForm(id)});
-    li.appendChild(delBtn);
-    li.appendChild(editBtn);
-    ul.appendChild(li);
+    showNotes.addEventListener('click', function() {showUserNotes(id)});
+
+    // Table
+    cell1.textContent = users[i].id;
+    cell2.textContent = users[i].name;
+    cell3.textContent = users[i].email;
+    cell4.textContent = users[i].notes;
+    cell5.appendChild(delBtn);
+    cell5.appendChild(editBtn);
+    cell5.appendChild(showNotes);
+    console.log(delBtn);
+
+    // Table for notes
+    // cellNote1.textContent = 
+
+
+    // var li = document.createElement('li'),
+    //     id = users[i].id,
+    //     delBtn = document.createElement('input'),
+    //     editBtn;
+    // li.textContent = 
+    // 'Name: ' + users[i].name + 
+    // ' email: ' + users[i].email + 
+    // ' notes: ' + users[i].notes.map(function(note){
+    //     return note.title + ' tags: ' + note.tags;
+    //   }).join(', ');
+    // delBtn.type = 'button';
+    // editBtn = delBtn.cloneNode(true);
+    // delBtn.value = 'Del';
+    // editBtn.value = 'Edit';
+    // delBtn.addEventListener('click', function() {rest.del('users', id); location.reload();});
+    // editBtn.addEventListener('click', function() {loadUserToForm(id)});
+    // li.appendChild(delBtn);
+    // li.appendChild(editBtn);
+    // ul.appendChild(li);
   })(users[i])
 };
 userDiv.appendChild(ul);
@@ -179,7 +243,14 @@ if (editUserForm.attachEvent) {
     editUserForm.addEventListener("submit", editUser);
 }
 
-// document.getElementById("newUser").submit();
+// Catch form for new note of existing user
+
+var newNoteForm = document.getElementById('newNote');
+if (newNoteForm.attachEvent) {
+    newNoteForm.attachEvent("submit", newNote);
+} else {
+    newNoteForm.addEventListener("submit", newNote);
+}
 
 
 
