@@ -27,7 +27,7 @@
       </thead>
     </table>
     <hr>
-    <table id="userNotes">
+    <table id="userNotesTable">
       <thead>
         <tr>
           <td>id</td>
@@ -35,14 +35,18 @@
           <td>text</td>
           <td>tags</td>
           <td>dates</td>
+          <td>actions</td>
         </tr>
       </thead>
+      <tbody>
+      </tbody>
     </table>
     <hr>
     <h2>New user</h2>
     <form id="newUser">
       Name: <input type="text" name="name"><br/>
       Email: <input type="email" name="email"><br/>
+      Password: <input type="password" name="password"><br/>
       <button type="submit">add user</button>
     </form>
     <hr>
@@ -62,6 +66,16 @@
       <input type="hidden" name="id">
       <button type="submit">Add note</button>
     </form>
+    <hr>
+    <h2>Edit notes</h2>
+    <form id="editNote">
+      Title: <input type="text" name="title"><br/>
+      Text: <textarea name="text"></textarea><br/>
+      <input type="hidden" name="userId">
+      <input type="hidden" name="noteId">
+      <button type="submit">edit user</button>
+    </form>
+    <hr>
   </div>
     
   <section id="intro" class="" src="pages/intro.htm"></section>
